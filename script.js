@@ -1,0 +1,14 @@
+let questions = 3;
+let questionsLeft = ' [' + questions + ' questions left]';
+let named = prompt('Please type your name' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+let food = prompt('Please type your favorite food' + questionsLeft);
+questions -= 1;
+questionsLeft = ' [' + questions + ' questions left]';
+let verb = prompt('Please type a verb without -ing' + questionsLeft);
+alert('All done. Ready for the message?');
+let sentence = "<h2>There once lived a mage called " + named;
+sentence += ' whose goal in life was to ' + verb;
+sentence += ' a pot of ' + food + ' in order to live a beautiful life. </h2>';
+document.write(sentence);
